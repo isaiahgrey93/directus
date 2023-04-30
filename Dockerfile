@@ -49,6 +49,6 @@ ENV \
 COPY --from=builder --chown=node:node /directus/dist .
 
 CMD : \
-	&& node /directus/cli.js bootstrap \
+	# && node /directus/cli.js bootstrap \
 	&& node /directus/cli.js start \
 	;
